@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | 山ノ言葉</title>
+<style>
+  :root { --bg: #f7f8fa; --text: #14181f; --sub: #4a5563; --accent: #0a7f93; --line: #dfe3e8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #05070d; --text: #e6edf3; --sub: #9fb3c8; --accent: #10def9; --line: #1d2633; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.8 -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .sub { color: var(--sub); margin: 0 0 32px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+  ul { padding-left: 1.4em; }
+  a { color: var(--accent); }
+  .en { color: var(--sub); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="sub">山ノ言葉（山ノ言葉醸造所の業務用 Mac アプリ）　制定 2026年10月11日</p>
+
+  <h2>1. 取得する情報</h2>
+  <p>アプリは、利用者が許可した Gmail アカウントから、読み取り専用の権限（https://www.googleapis.com/auth/gmail.readonly）で次の情報を取得します。</p>
+  <ul>
+    <li>PDF が添付されたメールの差出人・件名・Message-ID・受信日時</li>
+    <li>利用者がアプリに登録した取引先から届いたメールの、PDF の添付ファイル</li>
+  </ul>
+  <p>メールの本文は保存しません。メールを送る・消す・変えることはしません。</p>
+
+  <h2>2. 使い方</h2>
+  <p>取得した PDF は、受け取ったままの状態で納品書・請求書として保管し、仕入の記録の下書きを作るためだけに使います。PDF の文字は Mac の中で読み取ります。</p>
+
+  <h2>3. 保存する場所</h2>
+  <p>取得した情報は、利用者の Mac の中だけに保存します。Google へのログインの鍵は、Mac のキーチェーンに保存します。アプリの運営者がサーバーで情報を受け取ることはありません。</p>
+
+  <h2>4. 第三者への提供</h2>
+  <p>取得した情報を、第三者（AI のサービスを含みます）に販売・提供・送信しません。ただし、利用者が請求書の支払いを承認したときに限り、その請求書の PDF を、利用者自身の Notion のワークスペースに支払いの記録として添付します。</p>
+
+  <h2>5. Google API のデータの扱い</h2>
+  <p>アプリが Google API から受け取った情報の使い方と移転は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>（Limited Use の要件を含みます）に従います。</p>
+
+  <h2>6. 許可の取り消し</h2>
+  <p>アプリの「設定 › Gmail」でアカウントを外すと、Google への許可を取り消します。Google アカウントの「サードパーティ製のアプリとサービス」からも取り消せます。取り消したあとも、すでに保管した書類は Mac の中に残ります。帳簿の証拠として保存が必要なためです。</p>
+
+  <h2>7. お問い合わせ</h2>
+  <p>Google のログイン画面に表示されるサポート用のメールアドレスまで、ご連絡ください。</p>
+
+  <h2>Privacy Policy (English summary)</h2>
+  <p class="en">With read-only Gmail access (gmail.readonly), the app reads the sender, subject, Message-ID and date of mail with PDF attachments, and downloads the PDF attachments of mail from suppliers registered in the app. It keeps them on the user's Mac only, to file delivery notes and invoices and draft purchase records. Message bodies are not stored, and mail is never sent, deleted or changed. Nothing is sold, shared or sent to third parties (including AI services), except that when the user approves an invoice for payment, that invoice's PDF is attached to the user's own Notion workspace. The app's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked in the app (Settings › Gmail) or in the Google Account's third-party apps page.</p>
+</main>
+</body>
+</html>
