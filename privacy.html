@@ -23,18 +23,20 @@
 <body>
 <main>
   <h1>プライバシーポリシー</h1>
-  <p class="sub">山ノ言葉（山ノ言葉醸造所の業務用 Mac アプリ）　制定 2026年10月11日・改定 2026年10月12日</p>
+  <p class="sub">山ノ言葉（山ノ言葉醸造所の業務用 Mac アプリ）　制定 2026年10月11日・改定 2026年10月17日</p>
 
   <h2>1. 取得する情報</h2>
   <p>アプリは、利用者が許可した Gmail アカウントから、読み取り専用の権限（https://www.googleapis.com/auth/gmail.readonly）で次の情報を取得します。</p>
   <ul>
     <li>PDF が添付されたメールの差出人・件名・Message-ID・受信日時</li>
     <li>利用者がアプリに登録した取引先から届いたメールの、PDF の添付ファイル</li>
+    <li>請求書を届ける次のサービスからの、PDF の添付がない通知メール（件名に、利用者がアプリに登録した取引先の名前があるものだけ）の差出人・件名・受信日時と、本文の中の書類へのリンク：BtoBプラットフォーム（株式会社インフォマート）、マネーフォワード クラウド（株式会社マネーフォワード）、Box</li>
   </ul>
-  <p>メールの本文は保存しません。メールを送る・消す・変えることはしません。</p>
+  <p>通知メールの本文は、書類へのリンクを探すためだけに Mac の中で読み、リンクのほかは保存しません。ほかのメールの本文は読みません。メールを送る・消す・変えることはしません。</p>
 
   <h2>2. 使い方</h2>
   <p>取得した PDF は、受け取ったままの状態で納品書・請求書として保管し、仕入の記録の下書きを作るためだけに使います。PDF の文字は Mac の中で読み取ります。利用者が指示したときに限り、読み取った文字を AI アシスタントに渡して下書きを作ります（4 を参照）。</p>
+  <p>通知メールのリンクは、利用者が書類を開くためだけに、アプリの一覧に表示します。リンクを開くのは利用者のブラウザで、アプリはそれらのサービスにログインせず、ID やパスワードを預かりません。</p>
 
   <h2>3. 保存する場所</h2>
   <p>アプリは、取得した情報を利用者の Mac の中だけに保存します。Google へのログインの鍵は、Mac のキーチェーンに保存します。アプリの運営者がサーバーで情報を受け取ることはありません。4 で渡した情報の扱いは、渡し先の規約に従います。</p>
@@ -57,7 +59,7 @@
   <p>Google のログイン画面に表示されるサポート用のメールアドレスまで、ご連絡ください。</p>
 
   <h2>Privacy Policy (English summary)</h2>
-  <p class="en">With read-only Gmail access (gmail.readonly), the app reads the sender, subject, Message-ID and date of mail with PDF attachments, and downloads the PDF attachments of mail from suppliers registered in the app. It keeps them on the user's Mac only, to file delivery notes and invoices and draft purchase records. Message bodies are not stored, and mail is never sent, deleted or changed. Nothing is sold, shared or sent to third parties, with two exceptions, both at the user's own action: when the user approves an invoice for payment, that invoice's PDF is attached to the user's own Notion workspace; and when the user asks, the text read from purchase documents is given to the user's own AI assistant (Anthropic's Claude) to draft purchase records, which become records only after the user checks and approves them. The data is never used, or transferred, to create, train or improve AI or machine-learning models; the AI assistant is used with an account that has training on its data turned off. It is never used for advertising or credit decisions. The app's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked in the app (Settings › Gmail) or in the Google Account's third-party apps page.</p>
+  <p class="en">With read-only Gmail access (gmail.readonly), the app reads the sender, subject, Message-ID and date of mail with PDF attachments, and downloads the PDF attachments of mail from suppliers registered in the app. For invoices sent as a link by BtoB Platform (Infomart), Money Forward Cloud or Box, it reads the sender, subject and date of the notification mail whose subject names a registered supplier, and reads its body on the Mac only to find the link to the document; only the link is kept, the user opens it in their own browser, and the app never signs in to those services or holds their passwords. It keeps them on the user's Mac only, to file delivery notes and invoices and draft purchase records. Other message bodies are not read, and no message body is stored, and mail is never sent, deleted or changed. Nothing is sold, shared or sent to third parties, with two exceptions, both at the user's own action: when the user approves an invoice for payment, that invoice's PDF is attached to the user's own Notion workspace; and when the user asks, the text read from purchase documents is given to the user's own AI assistant (Anthropic's Claude) to draft purchase records, which become records only after the user checks and approves them. The data is never used, or transferred, to create, train or improve AI or machine-learning models; the AI assistant is used with an account that has training on its data turned off. It is never used for advertising or credit decisions. The app's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked in the app (Settings › Gmail) or in the Google Account's third-party apps page.</p>
 </main>
 </body>
 </html>
