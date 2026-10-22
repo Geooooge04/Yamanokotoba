@@ -23,7 +23,7 @@
 <body>
 <main>
   <h1>プライバシーポリシー</h1>
-  <p class="sub">山ノ言葉（山ノ言葉醸造所の業務用 Mac アプリ）　制定 2026年10月11日・改定 2026年10月18日</p>
+  <p class="sub">山ノ言葉（山ノ言葉醸造所の業務用 Mac アプリ）　制定 2026年10月11日・改定 2026年10月22日</p>
 
   <h2>1. 取得する情報</h2>
   <p>アプリは、利用者が許可した Gmail アカウントから、読み取り専用の権限（https://www.googleapis.com/auth/gmail.readonly）で次の情報を取得します。</p>
@@ -40,7 +40,7 @@
   <p>通知メールのリンクは、利用者が書類を開くためだけに、アプリの一覧に表示します。リンクを開くのは利用者のブラウザで、アプリはそれらのサービスにログインせず、ID やパスワードを預かりません。</p>
 
   <h2>3. 保存する場所</h2>
-  <p>アプリは、取得した情報を利用者の Mac の中だけに保存します。Google へのログインの鍵は、Mac のキーチェーンに保存します。アプリの運営者がサーバーで情報を受け取ることはありません。4 で渡した情報の扱いは、渡し先の規約に従います。</p>
+  <p>アプリは、取得した情報を利用者の Mac に保存します。利用者がアプリの「設定 › 同期」をオンにしたときは、利用者自身の Apple アカウントの iCloud（CloudKit の非公開のデータベース）を通じて、同じ利用者の iPhone の山ノ言葉にも同じ記録を保存します。この非公開のデータベースは利用者の Apple アカウントでだけ読めるもので、アプリの運営者が読むことはできません。Google へのログインの鍵は、Mac のキーチェーンにだけ保存し、同期しません。アプリの運営者がサーバーで情報を受け取ることはありません。4 で渡した情報の扱いは、渡し先の規約に従います。</p>
 
   <h2>4. 第三者への提供</h2>
   <p>取得した情報を、第三者に販売・提供・送信しません。例外は次の2つだけで、どちらも利用者自身の操作によります。</p>
@@ -54,13 +54,13 @@
   <p>アプリが Google API から受け取った情報の使い方と移転は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>（Limited Use の要件を含みます）に従います。</p>
 
   <h2>6. 許可の取り消し</h2>
-  <p>アプリの「設定 › Gmail」でアカウントを外すと、Google への許可を取り消します。Google アカウントの「サードパーティ製のアプリとサービス」からも取り消せます。取り消したあとも、すでに保管した書類は Mac の中に残ります。帳簿の証拠として保存が必要なためです。</p>
+  <p>アプリの「設定 › Gmail」でアカウントを外すと、Google への許可を取り消します。Google アカウントの「サードパーティ製のアプリとサービス」からも取り消せます。取り消したあとも、すでに保管した書類は Mac の中（同期をオンにしているときは、利用者自身の iCloud と iPhone にも）に残ります。帳簿の証拠として保存が必要なためです。</p>
 
   <h2>7. お問い合わせ</h2>
   <p>Google のログイン画面に表示されるサポート用のメールアドレスまで、ご連絡ください。</p>
 
   <h2>Privacy Policy (English summary)</h2>
-  <p class="en">With read-only Gmail access (gmail.readonly), the app reads the sender, subject, Message-ID and date of mail with PDF attachments, and downloads the PDF attachments of mail from suppliers registered in the app. For invoices sent as a link by BtoB Platform (Infomart), Money Forward Cloud or Box, it reads the sender, subject and date of the notification mail whose subject names a registered supplier, and reads its body on the Mac only to find the link to the document; only the link is kept, the user opens it in their own browser, and the app never signs in to those services or holds their passwords. It keeps them on the user's Mac only, to file delivery notes and invoices and draft purchase records. The sender's name and address of mail from a registered supplier are also kept as that supplier's contact, to tie their later mail to the supplier. Other message bodies are not read, and no message body is stored, and mail is never sent, deleted or changed. Nothing is sold, shared or sent to third parties, with two exceptions, both at the user's own action: when the user approves an invoice for payment, that invoice's PDF is attached to the user's own Notion workspace; and when the user asks, the text read from purchase documents is given to the user's own AI assistant (Anthropic's Claude) to draft purchase records, which become records only after the user checks and approves them. The data is never used, or transferred, to create, train or improve AI or machine-learning models; the AI assistant is used with an account that has training on its data turned off. It is never used for advertising or credit decisions. The app's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked in the app (Settings › Gmail) or in the Google Account's third-party apps page.</p>
+  <p class="en">With read-only Gmail access (gmail.readonly), the app reads the sender, subject, Message-ID and date of mail with PDF attachments, and downloads the PDF attachments of mail from suppliers registered in the app. For invoices sent as a link by BtoB Platform (Infomart), Money Forward Cloud or Box, it reads the sender, subject and date of the notification mail whose subject names a registered supplier, and reads its body on the Mac only to find the link to the document; only the link is kept, the user opens it in their own browser, and the app never signs in to those services or holds their passwords. It keeps them on the user's Mac, to file delivery notes and invoices and draft purchase records; when the user turns on the app's sync (Settings › 同期), the same records are also kept on the same user's iPhone through the private database of the user's own iCloud account (CloudKit), which only the user's Apple account can read and the app's developer cannot. The Google sign-in token stays in the Mac's keychain and is not synced. The sender's name and address of mail from a registered supplier are also kept as that supplier's contact, to tie their later mail to the supplier. Other message bodies are not read, and no message body is stored, and mail is never sent, deleted or changed. Nothing is sold, shared or sent to third parties, with two exceptions, both at the user's own action: when the user approves an invoice for payment, that invoice's PDF is attached to the user's own Notion workspace; and when the user asks, the text read from purchase documents is given to the user's own AI assistant (Anthropic's Claude) to draft purchase records, which become records only after the user checks and approves them. The data is never used, or transferred, to create, train or improve AI or machine-learning models; the AI assistant is used with an account that has training on its data turned off. It is never used for advertising or credit decisions. The app's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked in the app (Settings › Gmail) or in the Google Account's third-party apps page.</p>
 </main>
 </body>
 </html>
